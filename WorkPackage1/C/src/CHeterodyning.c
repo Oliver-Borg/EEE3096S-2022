@@ -23,7 +23,7 @@ int main(int argc, char**argv){
     FILE *fp;
     fp = fopen("../CCheck.txt", "w");
     for (int i = 0;i<SAMPLE_COUNT;i++ ){
-        fprintf(fp, "%f,", result[i]);
+        fprintf(fp, "%0.16f,", result[i]);
     }
     fclose(fp);
     return 0;
