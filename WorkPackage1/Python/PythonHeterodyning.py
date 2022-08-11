@@ -28,11 +28,11 @@ def main():
     Timing.endlog()
 
     # Write output to a file
-    f = open("PyCheck.txt", "w")
+    f = open("../PyCheck.txt", "w")
     for num in result:
         f.write(str(num)+",")
     f.close()
-    
+
 # Only run the functions if this module is run
 if __name__ == "__main__":
     try:

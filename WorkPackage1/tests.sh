@@ -77,16 +77,20 @@ do
             echo $var >> ../results.txt
             echo "-----------------------------------" >> ../results.txt
             # Run the unthreaded tests
+            
             if [ $debug == 0 ]
             then
+                make run
+                echo "Accuracy: " >> ../results.txt
+                python3 accuracyTest.py >> ../results.txt
                 for i in $( seq 0 $r )
                 do
                     echo "Run $i" >> ../results.txt
                     make run >> ../results.txt
                 done
+                
             fi
-            # echo "Accuracy: " >> ../results.txt
-            # python3 script.py >> ../results.txt
+            
             # Thread counts for threaded C program
             for t in 2 4 8 16 32 1
             do
@@ -109,11 +113,15 @@ do
                 # Run the threaded tests
                 if [ $debug == 0 ]
                 then
+                    make run_threaded
+                    echo "Accuracy: " >> ../results.txt
+                    python3 accuracyTest.py >> ../results.txt
                     for i in $( seq 0 $r )
                     do
                         echo "Run $i" >> ../results.txt
                         make run_threaded >> ../results.txt
                     done
+                    
                 fi
 
                 echo "Finished running test $count out of $max_count"
