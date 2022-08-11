@@ -13,9 +13,10 @@ total = 0
 
 for i in range(size):
     k = 0
-    while(k < len(str(cResults[i])) and k < len(str(pyResults[i])) and str(pyResults[i])[k] == str(cResults[i])[k] ):
+    diff = float(cResults[i]) - float(pyResults[i])
+    while(k < 16 and int(diff) == 0):
         k += 1
-    k -= str(pyResults[i]).index('.') - 1
+        diff *= 10
     total += k
 
 print(total/size)
