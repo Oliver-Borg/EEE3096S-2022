@@ -1,4 +1,4 @@
-with open("results/results1660241512.txt", 'r') as f:
+with open("results/results1660247500.txt", 'r') as f:
     a = f.readlines()
 headings = ['Language', 'Threads', 'Optimisation', 'Bit Width', 'Time', 'Run', 'Unroll', 'Accuracy']
 with open("results.csv", 'w') as f:
@@ -13,7 +13,7 @@ with open("results.csv", 'w') as f:
     acc = ''
     while(i < len(a)):
         if 'Elapsed time' in a[i]:
-            f.write('\nPython, 0, None, float, ' + str(float(a[i][22:].strip())/1000) + f', {run}, False, 100.0')
+            f.write('\nPython, 0, None, float, ' + str(float(a[i][22:].strip())/1000) + f', {run}, False, 16')
             run+=1
         if 'CFLAGS' in a[i]:
             flags = a[i][a[i].index('-O'):]
