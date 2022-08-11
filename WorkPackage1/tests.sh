@@ -138,4 +138,9 @@ mv src/CHeterodyning_threaded_backup.c src/CHeterodyning_threaded.c
 mv src/CHeterodyning_backup.c src/CHeterodyning.c
 mv src/globals_backup.h src/globals.h
 mv makefile_backup makefile
+ 
 cd ..
+timestamp=$(date +%s)
+cp results.txt results/results$timestamp.txt
+git add results/results$timestamp.txt
+git commit -m "Finished running tests at $timestamp"
