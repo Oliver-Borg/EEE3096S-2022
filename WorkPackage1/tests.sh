@@ -5,7 +5,7 @@
 git reset --hard
 # Number of times to run each program
 # We run the script a number of times to account for cache warmup and runtime variance
-r=100
+r=1
 
 # Debug mode
 debug=0
@@ -94,7 +94,7 @@ do
             fi
             
             # Thread counts for threaded C program
-            for t in 2 4 8 16 32 1
+            for t in 1 # 2 4 8 16 32
             do
                 echo "Started running test $count out of $max_count"
                 # Replace the fifteenth line of the header file with the number of threads we want
