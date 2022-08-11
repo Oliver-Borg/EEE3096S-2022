@@ -80,9 +80,9 @@ do
             
             if [ $debug == 0 ]
             then
-                make run
+                make run > /dev/null
                 echo "Accuracy: " >> ../results.txt
-                python3 accuracyTest.py >> ../results.txt
+                python3 ../accuracyTest.py >> ../results.txt
                 for i in $( seq 0 $r )
                 do
                     echo "Run $i" >> ../results.txt
@@ -113,9 +113,9 @@ do
                 # Run the threaded tests
                 if [ $debug == 0 ]
                 then
-                    make run_threaded
+                    make run_threaded > /dev/null
                     echo "Accuracy: " >> ../results.txt
-                    python3 accuracyTest.py >> ../results.txt
+                    python3 ../accuracyTest.py >> ../results.txt
                     for i in $( seq 0 $r )
                     do
                         echo "Run $i" >> ../results.txt
