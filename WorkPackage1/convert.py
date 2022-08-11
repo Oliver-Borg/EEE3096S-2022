@@ -1,4 +1,4 @@
-with open("results/results1660231371.txt", 'r') as f:
+with open("results/results1660241512.txt", 'r') as f:
     a = f.readlines()
 headings = ['Language', 'Threads', 'Optimisation', 'Bit Width', 'Time', 'Run', 'Unroll', 'Accuracy']
 with open("results.csv", 'w') as f:
@@ -23,8 +23,10 @@ with open("results.csv", 'w') as f:
             width = a[i+1].strip()
             if "Thread_Count" in a[i+2]:
                 threads = a[i+2].split(' ')[2].strip()
+        if 'Accuracy' in a[i]:
+            acc = a[i+1].strip()
         if 'Time:' in a[i]:
-            f.write(f'\nC, 0, {optimiser}, {width}, ' + a[i][6:14].strip() + f', {run}, {unroll}')
+            f.write(f'\nC, 0, {optimiser}, {width}, ' + a[i][6:14].strip() + f', {run}, {unroll}, {acc}')
             run+=1
         elif 'Time taken' in a[i]:
             f.write(f'\nC, {threads}, {optimiser}, {width}, ' + a[i].split(' ')[7].strip() + f', {run}, {unroll}, {acc}')
