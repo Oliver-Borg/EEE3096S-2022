@@ -20,5 +20,11 @@ int main(int argc, char**argv){
     double t = toc();
     printf("Time: %lf ms\n",t/1e-3);
     printf("End Unthreaded Test\n");
+    FILE *fp;
+    fp = fopen("../CCheck.txt", "w");
+    for (int i = 0;i<SAMPLE_COUNT;i++ ){
+        fprintf(fp, "%f,", result[i]);
+    }
+    fclose(fp);
     return 0;
 }
