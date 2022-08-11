@@ -28,7 +28,7 @@ def main():
     Timing.endlog()
 
     # Write output to a file
-    f = open("../PyCheck.txt", "w")
+    f = open("PyCheck.txt", "w")
     for num in result:
         f.write(str(num)+",")
     f.close()
