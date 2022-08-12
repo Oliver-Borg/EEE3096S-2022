@@ -94,7 +94,7 @@ do
             fi
             
             # Thread counts for threaded C program
-            for t in 1 # 2 4 8 16 32
+            for t in 1 2 4 8 16 32
             do
                 echo "Started running test $count out of $max_count"
                 # Replace the fifteenth line of the header file with the number of threads we want
