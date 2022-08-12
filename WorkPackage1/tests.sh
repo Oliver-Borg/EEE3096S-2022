@@ -86,8 +86,8 @@ do
             if [ $debug == 0 ]
             then
                 make run > /dev/null
-                echo "Accuracy: " >> results.txt
-                make check >> results.txt
+                echo "Accuracy: " >> ../results.txt
+                make check >> ../results.txt
                 for i in $( seq 0 $r )
                 do
                     echo "Run $i" >> ../results.txt
@@ -119,8 +119,8 @@ do
                 if [ $debug == 0 ]
                 then
                     make run_threaded > /dev/null
-                    echo "Accuracy: " >> results.txt
-                    make check >> results.txt
+                    echo "Accuracy: " >> ../results.txt
+                    make check >> ../results.txt
                     for i in $( seq 0 $r )
                     do
                         echo "Run $i" >> ../results.txt
@@ -153,4 +153,4 @@ git commit -m "Finished running tests at $timestamp"
 sed -i "1s/.*/with open('results\/results$timestamp.txt', 'r') as f:/" convert.py
 python3 convert.py
 cp results.csv results/results$timestamp.csv
-# cp results.csv /mnt/c/Users/otrol/OneDrive/EEE3095S/results/results$timestamp.csv
+cp results.csv /mnt/c/Users/otrol/OneDrive/EEE3095S/results/results$timestamp.csv
