@@ -10,7 +10,7 @@ mv makefile_backup makefile
 cd ..
 # Number of times to run each program
 # We run the script a number of times to account for cache warmup and runtime variance
-r=1
+r=0
 
 # Debug mode
 debug=0
@@ -86,10 +86,8 @@ do
             if [ $debug == 0 ]
             then
                 make run > /dev/null
-                cd ..
                 echo "Accuracy: " >> results.txt
-                python3 accuracyTest.py >> results.txt
-                cd C
+                make check >> results.txt
                 for i in $( seq 0 $r )
                 do
                     echo "Run $i" >> ../results.txt
@@ -121,10 +119,8 @@ do
                 if [ $debug == 0 ]
                 then
                     make run_threaded > /dev/null
-                    cd ..
                     echo "Accuracy: " >> results.txt
-                    python3 accuracyTest.py >> results.txt
-                    cd C
+                    make check >> results.txt
                     for i in $( seq 0 $r )
                     do
                         echo "Run $i" >> ../results.txt
@@ -153,3 +149,8 @@ timestamp=$(date +%s)
 cp results.txt results/results$timestamp.txt
 git add results/results$timestamp.txt
 git commit -m "Finished running tests at $timestamp"
+
+sed -i "1s/.*/with open('results\/results$timestamp.txt', 'r') as f:/" convert.py
+python3 convert.py
+cp results.csv results/results$timestamp.csv
+# cp results.csv /mnt/c/Users/otrol/OneDrive/EEE3095S/results/results$timestamp.csv
