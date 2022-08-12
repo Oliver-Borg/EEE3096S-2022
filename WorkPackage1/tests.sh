@@ -1,11 +1,16 @@
 #!/bin/bash
 # BRGOLI005 and PRKRAZ006 automated test script
 
-# Reset git branch to reset files to original values in case of an error
-git reset --hard
+# If the program failed in progress, there will still be backup files so we can retrieve this backups to restore the program
+cd C 
+mv src/CHeterodyning_threaded_backup.c src/CHeterodyning_threaded.c
+mv src/CHeterodyning_backup.c src/CHeterodyning.c
+mv src/globals_backup.h src/globals.h
+mv makefile_backup makefile
+cd ..
 # Number of times to run each program
 # We run the script a number of times to account for cache warmup and runtime variance
-r=1
+r=0
 
 # Debug mode
 debug=0
@@ -81,10 +86,8 @@ do
             if [ $debug == 0 ]
             then
                 make run > /dev/null
-                cd ..
-                echo "Accuracy: " >> results.txt
-                python3 accuracyTest.py >> results.txt
-                cd C
+                echo "Accuracy: " >> ../results.txt
+                make check >> ../results.txt
                 for i in $( seq 0 $r )
                 do
                     echo "Run $i" >> ../results.txt
@@ -116,10 +119,8 @@ do
                 if [ $debug == 0 ]
                 then
                     make run_threaded > /dev/null
-                    cd ..
-                    echo "Accuracy: " >> results.txt
-                    python3 accuracyTest.py >> results.txt
-                    cd C
+                    echo "Accuracy: " >> ../results.txt
+                    make check >> ../results.txt
                     for i in $( seq 0 $r )
                     do
                         echo "Run $i" >> ../results.txt
@@ -148,3 +149,8 @@ timestamp=$(date +%s)
 cp results.txt results/results$timestamp.txt
 git add results/results$timestamp.txt
 git commit -m "Finished running tests at $timestamp"
+
+sed -i "1s/.*/with open('results\/results$timestamp.txt', 'r') as f:/" convert.py
+python3 convert.py
+cp results.csv results/results$timestamp.csv
+cp results.csv /mnt/c/Users/otrol/OneDrive/EEE3095S/results/results$timestamp.csv

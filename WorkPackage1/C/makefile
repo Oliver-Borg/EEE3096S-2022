@@ -10,8 +10,10 @@ OBJS = obj/*
 default:
     mkdir -p bin obj
     $(CC) $(INCLUDE) $(CFLAGS) -c src/CHeterodyning.c -o obj/CHeterodyning.o
+    $(CC) $(INCLUDE) $(CFLAGS) -c src/CAccuracyCheck.c -o obj/CAccuracyCheck.o
     $(CC) $(INCLUDE) $(CFLAGS) -c Tools/Timer.cpp -o obj/Timer.o
     $(CC) -o bin/CHeterodyning obj/CHeterodyning.o obj/Timer.o $(CFLAGS)
+    $(CC) -o bin/CAccuracyCheck obj/CAccuracyCheck.o $(CFLAGS)
 
 threaded:
     mkdir -p bin obj
@@ -21,6 +23,9 @@ threaded:
 
 run:
     bin/CHeterodyning
+
+check:
+    bin/CAccuracyCheck
 
 run_threaded:
     bin/CHeterodyning_threaded

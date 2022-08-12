@@ -1,0 +1,738 @@
+Start of python golden measure tests
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-12 12:41:12 - Starting log
+========================================
+========================================
+2022-08-12 12:41:12 - End Program
+Elapsed time: 0:00:00.008984
+========================================
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.154300 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.1773 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.140300 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.17 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.108100 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.17 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.126200 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.1539 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.141300 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.1839 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.172000 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.2171 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.268500 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3451 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.138700 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.1652 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.151300 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.1859 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.130200 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.1676 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.137500 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.1621 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.164700 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.1952 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.174100 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.2307 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.262500 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3563 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.267400 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.267200 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3014 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.249100 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.2996 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.233100 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.2806 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.274800 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3112 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.288100 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.343 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.388000 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.5934 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.274400 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3044 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.306200 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3192 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.266500 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.2987 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.261200 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.2897 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.299900 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3074 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.289800 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.3258 ms
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 0.394800 ms
+End Unthreaded Test
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 0.464 ms
