@@ -50,12 +50,12 @@ int main(int argc, char** argv){
   printf("All threads have quit\n");
   printf("Time taken for threads to run = %lg ms\n", toc()/1e-3);
 
-    FILE *fp;
-    fp = fopen("../CCheck.txt", "w");
-    for (int i = 0;i<SAMPLE_COUNT;i++ ){
-        fprintf(fp, "%0.16f,", result[i]);
-    }
-    fclose(fp);
+    // FILE *fp;
+    // fp = fopen("../CCheck.txt", "w");
+    // for (int i = 0;i<SAMPLE_COUNT;i++ ){
+    //     fprintf(fp, "%0.16f,", result[i]);
+    // }
+    // fclose(fp);
   return 0;
 }
 //------------------------------------------------------------------------------

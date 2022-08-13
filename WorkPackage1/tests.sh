@@ -10,10 +10,13 @@ mv makefile_backup makefile
 cd ..
 # Number of times to run each program
 # We run the script a number of times to account for cache warmup and runtime variance
-r=0
+r=1000
 
 # Debug mode
 debug=0
+
+# Accuracy mode
+acc=0
 
 # This is a list of possible optimisation flags
 opts=('1' '2' '3' 'fast' 's' 'g' '0')
@@ -86,8 +89,11 @@ do
             if [ $debug == 0 ]
             then
                 make run > /dev/null
-                echo "Accuracy: " >> ../results.txt
-                make check >> ../results.txt
+                if [ $acc == 1 ]
+                then
+                    echo "Accuracy: " >> ../results.txt
+                    make check >> ../results.txt
+                fi
                 for i in $( seq 0 $r )
                 do
                     echo "Run $i" >> ../results.txt
@@ -119,8 +125,11 @@ do
                 if [ $debug == 0 ]
                 then
                     make run_threaded > /dev/null
-                    echo "Accuracy: " >> ../results.txt
-                    make check >> ../results.txt
+                    if [ $acc == 1 ]
+                    then
+                        echo "Accuracy: " >> ../results.txt
+                        make check >> ../results.txt
+                    fi
                     for i in $( seq 0 $r )
                     do
                         echo "Run $i" >> ../results.txt
