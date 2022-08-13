@@ -1,0 +1,262 @@
+Start of python golden measure tests
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-13 15:34:24 - Starting log
+========================================
+========================================
+2022-08-13 15:34:24 - End Program
+Elapsed time: 0:00:00.009794
+========================================
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning > /dev/null
+  6         29,412            7,392                0             0        7,392
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded > /dev/null
+  5         29,419            7,392                0             0        7,392
