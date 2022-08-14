@@ -35,6 +35,7 @@ do
     valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out python3 Python/PythonHeterodyning.py >> results.txt
     peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
     ms_print massif.out | grep " $peak  " >> results.txt
+    ls -l Python | grep "PythonHeterodyning" >> results.txt
 done
 
 cd C
@@ -102,6 +103,7 @@ do
                     make run >> ../results.txt
                     peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
                     ms_print massif.out | grep " $peak  " >> ../results.txt
+                    ls -l bin | grep "CHeterodyning" >> ../results.txt
                 done
                 
             fi
@@ -140,6 +142,7 @@ do
                         make run_threaded >> ../results.txt
                         peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
                         ms_print massif.out | grep " $peak  " >> ../results.txt
+                        ls -l bin | grep "CHeterodyning" >> ../results.txt
                     done
                     
                 fi

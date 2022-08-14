@@ -1,5 +1,5 @@
 .RECIPEPREFIX +=
-CC = arm-linux-gnueabihf-g++
+CC = g++
 CFLAGS = -lm -lrt
 INCLUDE = -ITools
 
@@ -22,13 +22,13 @@ threaded:
     $(CC) -o bin/CHeterodyning_threaded obj/CHeterodyning_threaded.o obj/Timer.o $(CFLAGS) -pthread
 
 run:
-    bin/CHeterodyning
+    valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
 
 check:
     bin/CAccuracyCheck
 
 run_threaded:
-    bin/CHeterodyning_threaded
+    valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
     
 
 clean: 
