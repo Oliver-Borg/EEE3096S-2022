@@ -1,0 +1,4673 @@
+Start of python golden measure tests
+Run 0
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 17:41:49 - Starting log
+========================================
+========================================
+2022-08-14 17:41:49 - End Program
+Elapsed time: 0:00:00.212654
+========================================
+-rw-r--r-- 1 pi pi     973 Aug 14 14:45 PythonHeterodyning.py
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.482023 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:42 CHeterodyning
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.60203 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:42 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.05703 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:43 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.86804 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:43 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.604 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:44 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.4401 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:44 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 5.46202 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:45 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.359023 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:45 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.68203 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:46 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.10303 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:46 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 17.4831 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:47 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.602 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:47 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 5.45302 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:47 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 16.8661 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:48 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.450675 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:48 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.67156 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:49 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.09756 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:49 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.5284 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:50 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.6745 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:50 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.4015 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:51 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 17.7832 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:51 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.697758 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 809992 Aug 14 17:52 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 17:51 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.41174 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 17:52 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 17:52 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.10969 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 17:52 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 17:52 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.20473 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 17:52 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 17:53 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.5537 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 17:52 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 17:53 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.8126 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 17:52 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 17:54 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.33676 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 17:52 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 17:54 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.677826 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808752 Aug 14 17:55 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 17:54 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.9367 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 17:55 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 17:55 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.51676 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 17:55 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 17:56 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.33775 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 17:55 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 17:56 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.9667 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 17:55 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 17:57 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.56284 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 17:55 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 17:57 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.74482 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 17:55 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 17:57 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 6.227860 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:58 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 17:57 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.37982 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:58 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:58 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.66982 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:58 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:59 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.17282 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:58 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 17:59 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.3428 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:58 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:00 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.3337 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:58 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:00 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.87888 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 17:58 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:01 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 6.828885 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:01 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:01 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.83884 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:01 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:02 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.1298 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:01 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:02 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.28186 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:01 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:02 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.6838 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:01 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:03 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 15.0798 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:01 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:03 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.34391 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:01 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:04 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.545927 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:04 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.71291 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:05 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.82889 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:05 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.43789 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:05 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.0679 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:06 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.8168 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:06 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.0469 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:07 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.271945 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:07 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:07 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.84793 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:07 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:08 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.18193 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:07 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:08 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.57692 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:07 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:09 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.7119 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:07 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:09 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.9679 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:07 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:10 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 4.98896 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:07 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:10 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.520953 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:10 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:10 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.99994 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:10 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:11 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.21093 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:10 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:11 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.19294 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:10 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:12 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.11193 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:10 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:12 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.0669 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:10 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:13 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 5.45296 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:10 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:13 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.692958 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 809992 Aug 14 18:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 808924 Aug 14 18:13 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.64394 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 18:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 18:14 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.83095 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 18:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 18:15 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.51494 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 18:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 18:15 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 4.25797 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 18:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 18:16 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.4179 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 18:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 18:16 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 4.94197 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 809992 Aug 14 18:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 18:16 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.691963 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808752 Aug 14 18:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 810296 Aug 14 18:16 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.2089 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 18:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 18:17 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.46495 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 18:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 18:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.87894 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 18:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 18:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.42494 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 18:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 18:19 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.5499 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 18:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 18:19 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.78895 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808752 Aug 14 18:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 18:20 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 5.730966 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 809056 Aug 14 18:20 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.78095 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:21 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.78395 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:21 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.1739 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:21 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 3.91498 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:22 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.8929 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:22 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.42534 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808620 Aug 14 18:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:23 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 4
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 6.644286 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 808908 Aug 14 18:23 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.48639 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:24 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 9.94339 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:24 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 10.2484 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:25 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.3154 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:25 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 15.5965 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:25 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+float
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.35424 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 808748 Aug 14 18:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 809040 Aug 14 18:26 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.016303 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:26 CHeterodyning
+-rwxr-xr-x 1 pi pi  809040 Aug 14 18:26 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.0723 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:27 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.7923 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:27 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.5204 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:27 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.2823 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:28 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 15.8624 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:28 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.5453 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:29 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 9.870221 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:29 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.1032 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:29 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.5902 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:30 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 16.0333 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:30 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 16.1003 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:31 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 19.0843 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:31 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.8082 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:31 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.070167 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:31 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.4092 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:32 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.1182 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:33 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.0792 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:33 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 15.5092 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:33 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 18.1602 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:34 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 22.9933 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:34 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.043124 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:34 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:34 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.2941 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:34 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:35 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.5801 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:34 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:35 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.3391 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:34 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:36 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.4592 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:34 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:36 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 17.7302 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:34 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:36 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 15.1341 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:34 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:37 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.056094 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:37 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:37 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.7831 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:37 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:38 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.9921 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:37 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:38 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.5521 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:37 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:38 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.4441 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:37 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:39 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 17.9161 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:37 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:39 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 16.0981 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:37 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:39 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.704077 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:40 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:39 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.9861 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:40 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:40 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.4531 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:40 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:41 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.2651 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:40 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:41 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.4061 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:40 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:41 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 18.6851 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:40 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:42 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.90605 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:40 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:42 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 11.329063 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 18:43 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:42 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.1771 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 18:43 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 18:43 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.6901 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 18:43 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 18:43 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.2731 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 18:43 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 18:44 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 16.2031 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 18:43 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 18:44 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 20.1861 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 18:43 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 18:44 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 17.8961 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 18:43 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 18:45 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 9.935044 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 18:45 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.5431 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:46 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.3161 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:46 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.7581 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:46 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 18.5531 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:47 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 18.4471 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:47 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops 
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 5.27102 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:48 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 9.847035 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:48 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.717 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:48 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.187 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:49 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.423 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:49 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.862 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:50 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 18.0191 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:50 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops 
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 21.6641 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:48 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:50 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.084029 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:51 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:50 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.712 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:51 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:51 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.662 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:51 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:51 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.427 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:51 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:52 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 15.788 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:51 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:52 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 3.67001 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:51 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:53 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops 
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.67902 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:51 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:53 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.146025 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:53 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608928 Aug 14 18:53 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.58 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:53 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:54 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.745 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:53 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:54 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.628 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:53 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:55 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.374 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:53 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:55 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 18.872 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:53 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:55 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops 
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.90001 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1609996 Aug 14 18:53 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:56 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.241021 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:56 CHeterodyning
+-rwxr-xr-x 1 pi pi 1610300 Aug 14 18:56 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.7275 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:56 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:57 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.9316 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:56 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:57 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.3266 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:56 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:57 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.0476 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:56 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:58 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 18.3114 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:56 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:58 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops 
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.27582 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608756 Aug 14 18:56 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:58 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 10.730702 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:59 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609060 Aug 14 18:58 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.3017 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:59 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 18:59 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 14.4676 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:59 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 19:00 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.5047 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:59 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 19:00 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 16.0766 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:59 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 19:00 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 16.6266 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:59 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 19:01 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops 
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.4994 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608624 Aug 14 18:59 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 19:01 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 11.337763 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 19:02 CHeterodyning
+-rwxr-xr-x 1 pi pi 1608912 Aug 14 19:01 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.7597 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 19:02 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 19:02 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 15.7097 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 19:02 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 19:02 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 15.9907 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 19:02 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 19:03 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 17.4157 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 19:02 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 19:03 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 3.67894 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 19:02 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 19:04 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops 
+double
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 11.6838 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 1608752 Aug 14 19:02 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 19:04 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 22.748643 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi  409144 Aug 14 19:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 1609044 Aug 14 19:04 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 31.1285 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:05 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 24.6176 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:05 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.4686 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:06 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 30.3216 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:06 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 30.6866 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:07 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 22.0797 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:04 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:07 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 23.207726 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:08 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:07 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.2887 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:08 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:08 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.0157 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:08 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:08 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 26.5577 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:08 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:09 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 27.0827 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:08 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:09 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 7.38893 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:08 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:10 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 18.0758 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:08 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:10 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 23.008791 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:11 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:10 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 27.0978 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:11 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:11 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.1588 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:11 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:12 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 26.5868 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:11 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:12 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 26.6898 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:11 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:12 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 30.3078 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:11 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:13 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.25294 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:11 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:13 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 23.447832 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 410512 Aug 14 19:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 409448 Aug 14 19:13 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 30.9548 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410512 Aug 14 19:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 410816 Aug 14 19:14 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 24.4808 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410512 Aug 14 19:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 410816 Aug 14 19:15 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.2218 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410512 Aug 14 19:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 410816 Aug 14 19:15 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 26.1398 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410512 Aug 14 19:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 410816 Aug 14 19:16 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 37.9048 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410512 Aug 14 19:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 410816 Aug 14 19:16 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 17.0529 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410512 Aug 14 19:14 CHeterodyning
+-rwxr-xr-x 1 pi pi 410816 Aug 14 19:16 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 22.989865 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 410816 Aug 14 19:16 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.8699 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:17 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.5359 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.0019 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 28.4109 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:19 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 29.7338 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:19 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.02197 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:17 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:20 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 23.896882 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:20 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 23.3259 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:20 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.7689 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:21 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.8249 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:21 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 28.5279 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:22 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 30.6829 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:22 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.89196 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:20 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:23 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 21.668907 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:23 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 31.9429 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:24 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 31.3089 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:24 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 31.8839 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:24 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 34.6529 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:25 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 36.7539 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:25 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 24.1969 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:23 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:26 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 24.520904 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:26 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 32.5119 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:27 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 37.0489 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:27 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 33.5959 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:27 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 38.1889 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:28 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 32.4359 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:28 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 8.64897 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:26 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:29 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 25.756908 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:29 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 35.3209 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:30 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 34.1319 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:30 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 31.7729 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:31 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 38.0846 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:31 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 4.61696 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:31 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 12.7689 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:29 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:32 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 25.161770 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:32 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 33.4217 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:33 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 35.0117 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:33 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 33.1837 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:34 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 35.8337 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:34 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 40.6247 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:35 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 5.49796 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:32 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:35 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 36.807722 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 410644 Aug 14 19:36 CHeterodyning
+-rwxr-xr-x 1 pi pi 413544 Aug 14 19:35 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 32.5658 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410644 Aug 14 19:36 CHeterodyning
+-rwxr-xr-x 1 pi pi 414912 Aug 14 19:36 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 35.0927 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410644 Aug 14 19:36 CHeterodyning
+-rwxr-xr-x 1 pi pi 414912 Aug 14 19:36 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 31.1848 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410644 Aug 14 19:36 CHeterodyning
+-rwxr-xr-x 1 pi pi 414912 Aug 14 19:37 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 37.7967 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410644 Aug 14 19:36 CHeterodyning
+-rwxr-xr-x 1 pi pi 414912 Aug 14 19:37 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.26096 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410644 Aug 14 19:36 CHeterodyning
+-rwxr-xr-x 1 pi pi 414912 Aug 14 19:38 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 23.7648 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 410644 Aug 14 19:36 CHeterodyning
+-rwxr-xr-x 1 pi pi 414912 Aug 14 19:38 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 23.023851 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:39 CHeterodyning
+-rwxr-xr-x 1 pi pi 414912 Aug 14 19:38 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 26.7168 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:39 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:39 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 23.3789 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:39 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:40 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.7068 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:39 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:40 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 13.9019 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:39 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:40 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 31.0248 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:39 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:41 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 19.6589 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409276 Aug 14 19:39 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:41 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 23.143868 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 409580 Aug 14 19:41 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 25.8309 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:42 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 26.5489 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:43 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 27.2069 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:43 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 27.2009 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 409432 Aug 14 19:44 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.67096 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:44 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 6.91096 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409144 Aug 14 19:42 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:44 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 2
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 21.631887 ms
+End Unthreaded Test
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 413528 Aug 14 19:44 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 31.0548 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:45 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 2
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 33.1818 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:46 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 4
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 32.1088 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:46 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 8
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 35.4038 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:47 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 16
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.28999 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:47 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 32
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 3.06998 ms
+# valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
+-rwxr-xr-x 1 pi pi 409272 Aug 14 19:45 CHeterodyning
+-rwxr-xr-x 1 pi pi 413660 Aug 14 19:47 CHeterodyning_threaded
