@@ -22,13 +22,14 @@ threaded:
     $(CC) -o bin/CHeterodyning_threaded obj/CHeterodyning_threaded.o obj/Timer.o $(CFLAGS) -pthread
 
 run:
-    valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+    bin/CHeterodyning
 
 check:
     bin/CAccuracyCheck
 
 run_threaded:
-    valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+    bin/CHeterodyning_threaded
+    # valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out
     
 
 clean: 

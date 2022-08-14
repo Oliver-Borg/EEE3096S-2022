@@ -10,7 +10,7 @@ mv makefile_backup makefile
 cd ..
 # Number of times to run each program
 # We run the script a number of times to account for cache warmup and runtime variance
-r=10
+r=0
 
 # Debug mode
 debug=0
@@ -32,9 +32,10 @@ echo "Start of python golden measure tests" > results.txt
 for i in $( seq 0 $r )
 do
     echo "Run $i" >> results.txt
-    valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out python3 Python/PythonHeterodyning.py >> results.txt
-    peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
-    ms_print massif.out | grep " $peak  " >> results.txt
+    # valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out 
+    python3 Python/PythonHeterodyning.py >> results.txt
+    # peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
+    # ms_print massif.out | grep " $peak  " >> results.txt
     ls -l Python | grep "PythonHeterodyning" >> results.txt
 done
 
@@ -101,8 +102,8 @@ do
                 do
                     echo "Run $i" >> ../results.txt
                     make run >> ../results.txt
-                    peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
-                    ms_print massif.out | grep " $peak  " >> ../results.txt
+                    # peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
+                    # ms_print massif.out | grep " $peak  " >> ../results.txt
                     ls -l bin | grep "CHeterodyning" >> ../results.txt
                 done
                 
@@ -140,8 +141,8 @@ do
                     do
                         echo "Run $i" >> ../results.txt
                         make run_threaded >> ../results.txt
-                        peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
-                        ms_print massif.out | grep " $peak  " >> ../results.txt
+                        # peak=$(ms_print massif.out | grep Detailed | grep -Eo "[0-9]+ \(" | grep -Eo "[0-9]+")
+                        # ms_print massif.out | grep " $peak  " >> ../results.txt
                         ls -l bin | grep "CHeterodyning" >> ../results.txt
                     done
                     
