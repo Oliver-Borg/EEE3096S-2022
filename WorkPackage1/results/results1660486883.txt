@@ -1,0 +1,3612 @@
+Start of python golden measure tests
+Run 0
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:20 - Starting log
+========================================
+========================================
+2022-08-14 16:19:20 - End Program
+Elapsed time: 0:00:00.319362
+========================================
+ 19     86,978,679        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 1
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:21 - Starting log
+========================================
+========================================
+2022-08-14 16:19:22 - End Program
+Elapsed time: 0:00:00.274144
+========================================
+ 19     86,886,835        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 2
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:23 - Starting log
+========================================
+========================================
+2022-08-14 16:19:23 - End Program
+Elapsed time: 0:00:00.375125
+========================================
+ 28     86,952,475        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 3
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:24 - Starting log
+========================================
+========================================
+2022-08-14 16:19:25 - End Program
+Elapsed time: 0:00:00.276946
+========================================
+ 23     86,963,931        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 4
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:26 - Starting log
+========================================
+========================================
+2022-08-14 16:19:26 - End Program
+Elapsed time: 0:00:00.276715
+========================================
+ 25     86,949,340        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 5
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:28 - Starting log
+========================================
+========================================
+2022-08-14 16:19:28 - End Program
+Elapsed time: 0:00:00.347793
+========================================
+ 20     86,896,148        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 6
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:29 - Starting log
+========================================
+========================================
+2022-08-14 16:19:29 - End Program
+Elapsed time: 0:00:00.330709
+========================================
+ 19     86,893,649        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 7
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:31 - Starting log
+========================================
+========================================
+2022-08-14 16:19:31 - End Program
+Elapsed time: 0:00:00.329014
+========================================
+ 22     86,985,972        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 8
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:32 - Starting log
+========================================
+========================================
+2022-08-14 16:19:33 - End Program
+Elapsed time: 0:00:00.276612
+========================================
+ 26     87,055,220        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 9
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:34 - Starting log
+========================================
+========================================
+2022-08-14 16:19:34 - End Program
+Elapsed time: 0:00:00.307480
+========================================
+ 22     86,868,267        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+Run 10
+There are 100000 samples
+using type <class 'float'>
+========================================
+2022-08-14 16:19:35 - Starting log
+========================================
+========================================
+2022-08-14 16:19:36 - End Program
+Elapsed time: 0:00:00.275124
+========================================
+ 18     86,859,984        3,790,992        3,777,881         7,991        5,120
+-rw-rw-r-- 1 otrolie otrolie     973 Aug 13 13:48 PythonHeterodyning.py
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.286400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.318000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.278200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.278100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.279000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.285200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.279800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.281800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.272900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.274400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.306500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.588 ms
+  8        620,526            7,208            5,456            48        1,704
+ 48      3,709,611           21,136           12,800           264        8,072
+ 49      3,726,657           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5332 ms
+ 48      3,709,611           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.487 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,795           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5249 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,804           21,152           12,800           264        8,088
+ 50      3,726,810           12,160            5,456            48        6,656
+ 51      3,727,296           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.587 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,600,154           20,960           12,800           264        7,896
+ 50      3,617,200           11,800            5,456            48        6,296
+ 51      3,726,737           11,976            5,456            48        6,472
+ 52      3,727,230           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5384 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5817 ms
+  8        620,526            7,208            5,456            48        1,704
+ 48      3,709,611           21,136           12,800           264        8,072
+ 49      3,726,657           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5309 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,687           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5662 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5332 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4754 ms
+  7        510,846            7,032            5,456            48        1,528
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,818           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.294900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.311200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.271600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.285900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.282900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.296900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.288800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.288500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.308000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.285400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.286100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5671 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5662 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6021 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.484 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,809           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6242 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5183 ms
+ 48      3,709,777           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.2862 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,708           21,136           12,800           264        8,072
+ 72      3,726,652           12,072            5,456            48        6,568
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5664 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5587 ms
+ 46      3,599,896           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5606 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5391 ms
+  9        730,182            7,392            5,456            48        1,888
+ 48      3,709,854           21,136           12,800           264        8,072
+ 51      3,726,900           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.362600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.303300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.310000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.290600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.317700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.304600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.292700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.351100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.325900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.289700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.305400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5824 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,755           21,136           12,800           264        8,072
+ 51      3,726,801           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.581 ms
+ 46      3,599,941           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5217 ms
+ 65      3,709,777           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5386 ms
+ 46      3,600,145           20,960           12,800           264        7,896
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5505 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5217 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,669           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5971 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5635 ms
+ 46      3,600,031           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.583 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5256 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5654 ms
+ 46      3,599,905           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.323300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.318100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.305600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.322200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.307400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.294100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.284000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.288500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.294300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.293000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.301500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5647 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.575 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5224 ms
+  9        730,792            7,664            5,728            56        1,880
+ 56      3,709,818           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5399 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,599,938           20,960           12,800           264        7,896
+ 50      3,616,984           11,800            5,456            48        6,296
+ 51      3,726,521           11,976            5,456            48        6,472
+ 52      3,727,014           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.604 ms
+  8        620,526            7,208            5,456            48        1,704
+ 48      3,709,611           21,136           12,800           264        8,072
+ 49      3,726,657           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5812 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6069 ms
+ 46      3,600,040           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5129 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5388 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,863           21,136           12,800           264        8,072
+ 50      3,726,909           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5626 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5675 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.295800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.302900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.332600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.292900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.290600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.304400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.306500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.315000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.300900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.302400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.287900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5696 ms
+ 46      3,600,040           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5237 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5211 ms
+ 50      3,709,660           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5842 ms
+ 46      3,599,995           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.516 ms
+  8        730,182            7,392            5,456            48        1,888
+ 48      3,709,854           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6416 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6107 ms
+ 63      3,599,959           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.573 ms
+ 46      3,600,049           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5814 ms
+ 63      3,600,076           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5628 ms
+  9        730,206            7,384            5,456            48        1,880
+ 48      3,709,777           21,152           12,800           264        8,088
+ 50      3,726,783           12,160            5,456            48        6,656
+ 51      3,727,269           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.638 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.316400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.295600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.299800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.302700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.330500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.326200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.283600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.304600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.335700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.332600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.301500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6153 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6186 ms
+ 46      3,599,977           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5012 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,746           21,136           12,800           264        8,072
+ 51      3,726,792           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5239 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6384 ms
+ 46      3,600,022           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.584 ms
+ 46      3,600,040           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5967 ms
+ 61      3,599,995           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6393 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,587           21,144           12,800           264        8,080
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.539 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4856 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,696           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4744 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.327800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.284300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.311700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.289200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.302800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.323600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.291200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.299200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.313700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.295200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.318800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0  -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6203 ms
+ 46      3,599,887           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5261 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,594           21,144           12,800           264        8,080
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5868 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5625 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.2948 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,690           21,136           12,800           264        8,072
+ 50      3,726,736           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5223 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,615           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5451 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,567           21,144           12,800           264        8,080
+ 52      3,726,558           12,160            5,456            48        6,656
+ 53      3,727,044           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4939 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,746           21,136           12,800           264        8,072
+ 51      3,726,792           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.511 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,710           21,136           12,800           264        8,072
+ 51      3,726,756           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5461 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5184 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.305200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.332000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.287900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.301700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.293000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.304600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.302400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.293400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.295900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.316800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.330700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O1 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5458 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5554 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4722 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,647           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5929 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,759           21,152           12,800           264        8,088
+ 50      3,726,765           12,160            5,456            48        6,656
+ 51      3,727,251           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4836 ms
+  9        730,197            7,384            5,456            48        1,880
+ 48      3,709,774           21,144           12,800           264        8,080
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5201 ms
+ 48      3,709,606           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6233 ms
+  9        620,526            7,208            5,456            48        1,704
+ 48      3,709,611           21,136           12,800           264        8,072
+ 50      3,726,657           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6177 ms
+  8        620,526            7,208            5,456            48        1,704
+ 48      3,709,791           21,136           12,800           264        8,072
+ 50      3,726,837           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6158 ms
+ 46      3,599,887           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6374 ms
+  8        511,157            7,200            5,456            48        1,696
+  9        620,550            7,200            5,456            48        1,696
+ 48      3,709,605           21,144           12,800           264        8,080
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5404 ms
+ 46      3,599,974           20,960           12,800           264        7,896
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.296000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.284200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.336300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.306700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.300100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.309600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.308100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.294000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.293000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.319800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.303000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O2 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5108 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.561 ms
+ 46      3,599,887           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5393 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,804           21,152           12,800           264        8,088
+ 50      3,726,810           12,160            5,456            48        6,656
+ 51      3,727,296           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5334 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.3109 ms
+  6        510,861            7,024            5,456            48        1,520
+ 48      3,709,645           21,136           12,800           264        8,072
+ 51      3,726,621           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5279 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,683           21,136           12,800           264        8,072
+ 51      3,726,729           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5726 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5714 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5612 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5529 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,692           21,136           12,800           264        8,072
+ 51      3,726,738           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5035 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,543           21,152           12,800           264        8,088
+ 51      3,726,549           12,160            5,456            48        6,656
+ 52      3,727,035           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.595500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.294300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.287800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.320700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.311300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.367200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.307400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.298600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.320300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.298800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.294200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O3 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5943 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4986 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5089 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5662 ms
+ 63      3,600,094           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6149 ms
+  8        620,526            7,208            5,456            48        1,704
+ 48      3,709,611           21,136           12,800           264        8,072
+ 49      3,726,657           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4774 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,836           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5844 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4881 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.518 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,795           21,152           12,800           264        8,088
+ 50      3,726,801           12,160            5,456            48        6,656
+ 51      3,727,287           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.311 ms
+  8        620,526            7,208            5,456            48        1,704
+ 48      3,709,573           21,136           12,800           264        8,072
+ 50      3,726,619           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4915 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,719           21,136           12,800           264        8,072
+ 51      3,726,765           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.286300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.305200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.309500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.296400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.287200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.292300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.336700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.401300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.325500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.311600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.296100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Ofast -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6395 ms
+  8        511,157            7,200            5,456            48        1,696
+  9        620,550            7,200            5,456            48        1,696
+ 48      3,709,605           21,144           12,800           264        8,080
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.2975 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,825           21,136           12,800           264        8,072
+ 52      3,726,871           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5166 ms
+  9        730,206            7,384            5,456            48        1,880
+ 48      3,709,786           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4865 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,827           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5584 ms
+ 46      3,599,905           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5717 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5584 ms
+ 46      3,599,914           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5951 ms
+ 46      3,600,004           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4759 ms
+  8        620,526            7,208            5,456            48        1,704
+ 48      3,709,818           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5496 ms
+ 63      3,600,076           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5595 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.302700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.300000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.310400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.296600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.300900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.287400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.310400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.303000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.305100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.293900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.318700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Os -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5327 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,558           21,144           12,800           264        8,080
+ 52      3,726,549           12,160            5,456            48        6,656
+ 53      3,727,035           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5852 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5791 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5486 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.567 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.635 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,600,004           20,968           12,800           264        7,904
+ 70      3,726,794           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5805 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 52      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5551 ms
+ 46      3,599,896           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5841 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.2545 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,645           21,136           12,800           264        8,072
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5516 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.298900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.293300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.306500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.291400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.305000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.291900 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.296800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.336600 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.300500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.301000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.292800 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -Og -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6003 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5299 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,642           21,152           12,800           264        8,088
+ 52      3,726,648           12,160            5,456            48        6,656
+ 53      3,727,134           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.4862 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,710           21,136           12,800           264        8,072
+ 51      3,726,756           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5525 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.544 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5195 ms
+ 64      3,709,651           21,152           12,800           264        8,088
+ 84      3,725,796           12,656            6,000            64        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5399 ms
+ 50      3,709,624           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5068 ms
+ 62      3,709,657           21,144           12,800           264        8,080
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5236 ms
+  8        620,502            7,216            5,456            48        1,712
+  9        730,158            7,400            5,456            48        1,896
+ 48      3,709,768           21,152           12,800           264        8,088
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.561 ms
+ 46      3,599,887           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6584 ms
+ 46      3,599,896           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of unthreaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.304000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.286000 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.327200 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.284700 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.311300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.304100 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.294500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.303500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.288500 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.313300 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning
+Running Unthreaded Test
+Precision sizeof 8
+Total amount of samples: 100000
+Clock resolution: 1 ns
+Time: 1.438400 ms
+End Unthreaded Test
+  6         29,412            7,392                0             0        7,392
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+-----------------------------------
+Start of threaded C tests with options
+CFLAGS = -lm -lrt -O0 -funroll-loops -mfp16-format=ieee
+__fp16
+#define Thread_Count 1
+void* Thread_Main(void* Parameter);
+-----------------------------------
+Run 0
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5802 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,600,154           20,960           12,800           264        7,896
+ 49      3,617,200           11,800            5,456            48        6,296
+ 50      3,726,737           11,976            5,456            48        6,472
+ 51      3,727,230           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 1
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6007 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 2
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5955 ms
+ 63      3,599,968           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 3
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5816 ms
+ 46      3,599,887           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 4
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5809 ms
+  8        620,526            7,208            5,456            48        1,704
+ 48      3,709,611           21,136           12,800           264        8,072
+ 49      3,726,657           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 5
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.586 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,709,872           21,136           12,800           264        8,072
+ 50      3,726,918           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 6
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6446 ms
+ 46      3,600,031           20,968           12,800           264        7,904
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 7
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5532 ms
+  8        511,157            7,200            5,456            48        1,696
+ 48      3,709,620           21,136           12,800           264        8,072
+ 51      3,726,666           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 8
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.5675 ms
+  8        620,517            7,208            5,456            48        1,704
+ 48      3,709,602           21,136           12,800           264        8,072
+ 51      3,726,648           11,976            5,456            48        6,472
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 9
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.6743 ms
+  9        730,200            7,392            5,456            48        1,888
+ 48      3,600,154           20,960           12,800           264        7,896
+ 50      3,617,200           11,800            5,456            48        6,296
+ 51      3,726,737           11,976            5,456            48        6,472
+ 52      3,727,230           12,096            5,456            48        6,592
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
+Run 10
+valgrind --tool=massif --stacks=yes --depth=1 --massif-out-file=massif.out bin/CHeterodyning_threaded
+Clock resolution: 1 ns
+Threads created :-)
+All threads have quit
+Time taken for threads to run = 1.575 ms
+ 46      3,599,938           20,960           12,800           264        7,896
+-rwxrwxr-x 1 otrolie otrolie 1617216 Aug 13 17:18 CHeterodyning
+-rwxrwxr-x 1 otrolie otrolie 1617512 Aug 13 17:18 CHeterodyning_threaded
